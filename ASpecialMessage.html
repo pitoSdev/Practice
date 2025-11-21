@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>A Special Message 💕</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Audio files -->
+    <audio id="audio1" src="Music/Ghibli Coffee Shop ☕️ Music to put you in a better mood 🌿 lofi hip hop - lofi songs _ study _ relax [zhDwjnYZiCo].mp3" preload="auto" loop></audio>
+    <audio id="audio2" src="Music/Cheering sound effect free copyright.mp3" preload="auto"></audio>
+    <audio id="audio3" src="Music/Cinematic Romantic Wedding Acoustic Orchestra Piano by Cold Cinema [No Copyright Music]  Waltz.mp3" preload="auto" loop></audio>
+
+    <!-- INTRO OVERLAY -->
+    <div id="intro-overlay" class="section active">
+        <p>🌸 Tap to Begin the Magic 🌸</p>
+    </div>
+
+    <!-- SECTION 1: Cherry Blossoms -->
+    <div id="section1" class="section">
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+
+        <div class="content">
+            <h1>You've been working so hard...</h1>
+            <p class="subtitle">Time for something special ✨</p>
+            <button class="button-link" onclick="goToSection(2)">Click here for a surprise!</button>
+        </div>
+    </div>
+
+    <!-- SECTION 2: Congratulations -->
+    <div id="section2" class="section">
+        <h1>🎉 Congratulations on finishing your exams! 🎉</h1>
+        <p>You did amazing! I'm so proud of you!</p>
+        <p>You have received a voucher for a <span class="rainbow-text">SPECIAL DATE!!!!</span> 💕</p>
+        <button class="button-link" onclick="goToSection(3)">Còn nữa nèee...</button>
+    </div>
+
+    <!-- SECTION 3: Envelope -->
+    <div id="section3" class="section">
+        <div class="envelope-instruction">📩 Tap the envelope to open your special message!</div>
+        <div class="envelope-wrapper">
+            <div id="envelope" class="close">
+            <div class="front flap"></div>
+            <div class="front pocket"></div>
+            <div class="letter">
+                <div class="words line1"></div>
+                <div class="words line2"></div>
+                <div class="words line3"></div>
+                <div class="words line4"></div>
+            </div>
+
+            <div class="flying-hearts">
+                <div class="flying-heart a1"></div>
+                <div class="flying-heart a2"></div>
+                <div class="flying-heart a3"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 4: Date Details -->
+    <div id="section4" class="section">
+        <div class="heart">💕</div>
+        <div class="heart">💖</div>
+        <div class="heart">💗</div>
+        <div class="heart">💝</div>
+        <div class="heart">💞</div>
+
+        <div class="container">
+            <h1>💝 Chi Tiết Buổi Hẹn Đặc Biệt 💝</h1>
+            <p class="subtitle">Một ngày đáng nhớ dành riêng cho nàng ✨</p>
+
+            <div class="details-grid">
+                <div class="detail-card">
+                    <h2>📅 Thời Gian</h2>
+                    <p><strong>Ngày:</strong> Thứ năm Ngày 04/12/2025<br>
+                    <strong>Giờ:</strong> 18:00<br>
+                    <em>Giờ giấc để thông báo thui chứ tui muốn qua đón nàng í 😊</em></p>
+                </div>
+
+                <div class="detail-card">
+                    <h2>📍 Địa Điểm</h2>
+                    <p><strong>[Tên Địa Điểm]</strong><br>
+                    [Địa chỉ cụ thể]<br>
+                    <em>Grab car chở hoàng tử sẽ tới đón nàng tại 226/15 Thái Phiên hehe</em></p>
+                </div>
+
+                <div class="detail-card">
+                    <h2>👗 Dress Code</h2>
+                    <p><strong>Trang phục:</strong> Elegant chanh sả ngầu ngầu<br>
+                    <strong>Màu gợi ý:</strong> <span style="color: #0a2472">Xanh</span>, Trắng, <span style="color:black">Đen</span>, <span style="color:#ffda68">Vàng kim</span><br>
+                    <em>Nàng mặc gì cũng đẹp thui ó! 💕</em></p>
+                </div>
+
+                <div class="detail-card">
+                    <h2>🎁 Hoạt Động</h2>
+                    <p>[Mô tả ngắn gọn về hoạt động]<br>
+                    <em>Và còn nhiều bất ngờ nữa... 🎉</em></p>
+                </div>
+            </div>
+
+            <div class="special-note">
+                <h2>💌 <span class="gradient-text">LỜI NHẮN ĐẶC BIỆT</span></h2>
+                <p>Bạn đã vượt qua kì thi một cách cực kỳ xuất sắc ý!</p>
+                <p>Đây là kỷ niệm nho nhỏ để lưu trữ lại sự cố gắng không ngừng của bạn💕</p>
+                <p>Và biết đâu cũng có thể có thêm quà tặng bất ngờ nữa 😉</p>
+            </div>
+
+            <div class="countdown">
+                <h3>⏰ Đếm Ngược Đến Ngày Hẹn</h3>
+                <div class="countdown-timer">
+                    <div class="time-unit">
+                        <span class="number" id="days">00</span>
+                        <span class="label">Ngày</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="number" id="hours">00</span>
+                        <span class="label">Giờ</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="number" id="minutes">00</span>
+                        <span class="label">Phút</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="number" id="seconds">00</span>
+                        <span class="label">Giây</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confetti library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <script>
+        const audio1 = document.getElementById('audio1');
+        const audio2 = document.getElementById('audio2');
+        const audio3 = document.getElementById('audio3');
+        let currentSection = 0;
+        let confettiInterval = null;
+        let envelopeOpened = false;
+
+        // Intro overlay click
+        document.getElementById('intro-overlay').addEventListener('click', () => {
+            audio1.volume = 0.3;
+            audio1.play().catch(err => console.log('Audio blocked:', err));
+            goToSection(1);
+        });
+
+        function goToSection(sectionNum) {
+            // Hide current section
+            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+            
+            // Show new section
+            const targetSection = document.getElementById(`section${sectionNum}`);
+            targetSection.classList.add('active');
+            currentSection = sectionNum;
+
+            // Handle audio transitions
+            if (sectionNum === 1) {
+                stopAllAudio();
+                audio1.currentTime = 0;
+                audio1.play();
+            } else if (sectionNum === 2) {
+                stopAllAudio();
+                audio2.currentTime = 0;
+                audio2.play();
+                startConfetti();
+            } else if (sectionNum === 3) {
+                stopAllAudio();
+                stopConfetti();
+                // Reset envelope to closed state
+                document.getElementById('envelope').classList.remove('open');
+                document.getElementById('envelope').classList.add('close');
+            } else if (sectionNum === 4) {
+                stopAllAudio();
+                audio3.currentTime = 0;
+                audio3.play();
+                startCountdown();
+            }
+        }
+
+
+        function stopAllAudio() {
+            [audio1, audio2, audio3].forEach(audio => {
+                audio.pause();
+                audio.currentTime = 0;
+            });
+        }
+
+        function startConfetti() {
+            const duration = 5000;
+            const animationEnd = Date.now() + duration;
+            const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 999 };
+
+            function randomInRange(min, max) {
+                return Math.random() * (max - min) + min;
+            }
+
+            confettiInterval = setInterval(function() {
+                const timeLeft = animationEnd - Date.now();
+
+                if (timeLeft <= 0) {
+                    return clearInterval(confettiInterval);
+                }
+
+                const particleCount = 50 * (timeLeft / duration);
+                confetti({
+                    ...defaults,
+                    particleCount,
+                    origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 }
+                });
+                confetti({
+                    ...defaults,
+                    particleCount,
+                    origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 }
+                });
+            }, 250);
+        }
+
+        function stopConfetti() {
+            if (confettiInterval) {
+                clearInterval(confettiInterval);
+            }
+        }
+
+        function startCountdown() {
+            const dateOfDate = new Date("December 04, 2025 19:00:00").getTime();
+
+            const countdown = setInterval(function() {
+                const now = new Date().getTime();
+                const distance = dateOfDate - now;
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                document.getElementById("days").textContent = String(days).padStart(2, '0');
+                document.getElementById("hours").textContent = String(hours).padStart(2, '0');
+                document.getElementById("minutes").textContent = String(minutes).padStart(2, '0');
+                document.getElementById("seconds").textContent = String(seconds).padStart(2, '0');
+
+                if (distance < 0) {
+                    clearInterval(countdown);
+                    document.querySelector('.countdown-timer').innerHTML = "<h2 style='color: #db2777; font-size: 2rem;'>🎉 Hôm nay là ngày hẹn! 🎉</h2>";
+                }
+            }, 1000);
+        }
+        document.addEventListener("DOMContentLoaded", function(){
+            const envelope = document.getElementById('envelope');
+            envelope.addEventListener('click', () => {
+                if (!envelopeOpened) {
+                    envelope.classList.remove('close');
+                    envelope.classList.add('open');
+                    envelopeOpened = true;
+
+                    // After animation, go to section 4
+                    setTimeout(() => {
+                        goToSection(4);
+                        document.getElementById('section4').classList.add('active');
+                    }, 2000);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
